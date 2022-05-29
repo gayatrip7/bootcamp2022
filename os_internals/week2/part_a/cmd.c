@@ -16,8 +16,15 @@ int main(int argc, char **argv)
     args[argc-1] = NULL;
 
     // Implement your code here
-    
-
+    int pid = fork();
+    if (pid == 0)
+    {
+	    exec(argv[0], args);
+    }
+    else
+    {
+    	wait();
+    }
     // 
     
     exit();
