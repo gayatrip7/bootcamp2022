@@ -1,0 +1,8 @@
+1) initlock
+2) Name of lock, cpu holding the lock, call stack
+3) acquire, release
+4) To check whether the CPU in question is holding the lock
+5) Atomically compares the lock to the given quantity
+6) It may not be atomic.
+7) We want it to spin until lock acquired
+8) To maintain atomicity
